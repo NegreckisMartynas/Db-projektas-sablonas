@@ -16,5 +16,9 @@
     "eslint-plugin-svelte3": "^3.2.1",
     "svelte": "^3.44.0"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "cookie": "^0.4.2",
+    "uuid": "^8.3.2"
+  }
 }
