@@ -1,6 +1,6 @@
 <script>
     import LayoutCentered from "../layouts/LayoutCentered.svelte";
-    import Input from "../components/Input.svelte";
+    import TextInput from "../components/Inputs/TextInput.svelte";
     import { page } from '$app/stores';
 
     let errorMessage = null;
@@ -57,8 +57,8 @@
             {#if errorMessage }
                 <span class="text-danger">{errorMessage}</span>
             {/if}
-            <Input type="text" name="username" id="usernameInput" placeholder="Username"/>
-            <Input type="password" name="password" id="PasswordInput" placeholder="Password"/>
+            <TextInput type="text" name="username" id="usernameInput" placeholder="Username"/>
+            <TextInput type="password" name="password" id="PasswordInput" placeholder="Password"/>
             <button class="btn btn-primary" type="submit">Sign in</button>
         </form>
     </div>
