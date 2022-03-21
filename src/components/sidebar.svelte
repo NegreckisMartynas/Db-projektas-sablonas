@@ -48,6 +48,9 @@
             <li>
                 <a href="/forms"><i class="fa fa-edit"></i> Forms </a>
             </li>
+            <li>
+                <a href="/table"><i class="fa fa-table"></i> Table </a>
+            </li>
         </ul>
 
     </div>
