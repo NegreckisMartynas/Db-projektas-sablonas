@@ -24,7 +24,7 @@
     }
 
     main {
-        overflow: scroll;
+        overflow: auto;
     }
 </style>
 

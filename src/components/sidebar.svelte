@@ -54,6 +54,9 @@
             <li>
                 <a href="/charts"><i class="fa fa-bar-chart-o"></i> Charts </a>
             </li>
+            <li>
+                <a href="/form"><i class="fa fa-edit"></i> Forms </a>
+            </li>
         </ul>
 
     </div>
