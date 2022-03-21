@@ -18,13 +18,6 @@
     };
 </script>
 
-<style>
-    
-    form {
-        padding: 20px;
-    }
-</style>
-
 <LayoutWithNavigation>
     <div class="col-md-12">
         <div class="panel panel-default">

@@ -5,10 +5,8 @@ import User from '../services/user';
 /** @type {import('../../.svelte-kit/types/src/routes/signin').RequestHandler} */
 export async function post({request}) {
     const formData = Object.fromEntries((await request.formData()).entries());
-    console.log("formData:", formData);
     if(User.verify(formData.username, formData.password)) {
       const id = Session.create(User.get(formData.username));
-      console.log(id, User.get(formData.username));
       return {
           status: 303,//See other
           headers: {
