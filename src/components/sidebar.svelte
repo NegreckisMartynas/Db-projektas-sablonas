@@ -51,6 +51,9 @@
             <li>
                 <a href="/table"><i class="fa fa-table"></i> Table </a>
             </li>
+            <li>
+                <a href="/charts"><i class="fa fa-bar-chart-o"></i> Charts </a>
+            </li>
         </ul>
 
     </div>

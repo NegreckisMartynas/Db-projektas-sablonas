@@ -8,7 +8,7 @@
 <style>
     div.layout {
         width: 100%;
-        height: 100%;
+        height: 100vh;
         display: grid;
         grid-template: repeat(2, min-content) auto / auto;
     }
@@ -22,10 +22,16 @@
             grid-column-end: span 2;
         }
     }
+
+    main {
+        overflow: scroll;
+    }
 </style>
 
 <div class="layout">
-<Topbar/>
-<Sidebar active={active}/>
-<slot></slot>
+    <Topbar/>
+    <Sidebar active={active}/>
+    <main>
+        <slot></slot>
+    </main>
 </div>
