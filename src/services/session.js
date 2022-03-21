@@ -11,7 +11,7 @@ const Session = {
         return uuid;
     },
     remove(id) {
-        Session.active[id] = null;
+        delete Session.active[id];
     }
 }
 

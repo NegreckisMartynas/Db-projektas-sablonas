@@ -1,6 +1,8 @@
 <script>
     import Sidebar from '../components/sidebar.svelte';
     import Topbar from '../components/topbar.svelte';
+
+    export let active = "";
 </script>
 
 <style>
@@ -24,6 +26,6 @@
 
 <div class="layout">
 <Topbar/>
-<Sidebar/>
+<Sidebar active={active}/>
 <slot></slot>
 </div>

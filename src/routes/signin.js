@@ -2,7 +2,7 @@ import {serialize} from 'cookie';
 import Session from '../services/session';
 import User from '../services/user';
 
-/** @type {import('../../.svelte-kit/types/src/routes/login').RequestHandler} */
+/** @type {import('../../.svelte-kit/types/src/routes/signin').RequestHandler} */
 export async function post({request}) {
     const formData = Object.fromEntries((await request.formData()).entries());
     console.log("formData:", formData);
@@ -25,6 +25,6 @@ export async function post({request}) {
       return {
         status: 401,
         body: 'Incorrect username or password'
-    };
+      };
     }
 }
