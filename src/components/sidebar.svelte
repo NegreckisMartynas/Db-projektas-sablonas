@@ -46,7 +46,7 @@
                 <a href="/"><i class="fa fa-dashboard"></i>Dashboard</a>
             </li>
             <li>
-                <a href="/forms"><i class="fa fa-edit"></i> Forms </a>
+                <a href="/inputs"><i class="fa fa-pencil"></i> Inputs </a>
             </li>
             <li>
                 <a href="/table"><i class="fa fa-table"></i> Table </a>
