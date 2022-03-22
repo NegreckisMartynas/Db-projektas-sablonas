@@ -12,6 +12,7 @@
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
     "@sveltejs/kit": "next",
+    "@types/node": "^17.0.22",
     "eslint": "^7.32.0",
     "eslint-plugin-svelte3": "^3.2.1",
     "svelte": "^3.44.0"
@@ -19,6 +20,7 @@
   "type": "module",
   "dependencies": {
     "cookie": "^0.4.2",
+    "mysql2": "^2.3.3",
     "uuid": "^8.3.2"
   }
 }
