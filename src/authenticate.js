@@ -6,8 +6,5 @@ export function sessionAuthenticate(session) {
             }
         }
     return {
-        props: {
-            user: session.user
-        }
     };
 }
