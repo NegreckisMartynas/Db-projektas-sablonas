@@ -1,8 +1,8 @@
 import {serialize} from 'cookie';
-import Session from '../services/session';
-import User from '../services/user';
+import Session from '../../services/session';
+import User from '../../services/user';
 
-/** @type {import('../../.svelte-kit/types/src/routes/signin').RequestHandler} */
+/** @type {import('../../../.svelte-kit/types/src/routes/signin').RequestHandler} */
 export async function post({request}) {
     const formData = Object.fromEntries((await request.formData()).entries());
     if(User.verify(formData.username, formData.password)) {

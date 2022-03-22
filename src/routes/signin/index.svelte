@@ -1,6 +1,6 @@
 <script>
-    import LayoutCentered from "../layouts/LayoutCentered.svelte";
-    import TextInput from "../components/Inputs/TextInput.svelte";
+    import LayoutCentered from "../../layouts/LayoutCentered.svelte";
+    import TextInput from "../../components/Inputs/TextInput.svelte";
     import { page } from '$app/stores';
 
     let errorMessage = null;
@@ -12,8 +12,6 @@
         }
     });
     
-
-
 </script>
 
 <style>
