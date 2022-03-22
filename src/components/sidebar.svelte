@@ -57,6 +57,9 @@
             <li>
                 <a href="/form"><i class="fa fa-edit"></i> Forms </a>
             </li>
+            <li>
+                <a href="/database"><i class="fa fa-database"></i> Database </a>
+            </li>
         </ul>
 
     </div>
