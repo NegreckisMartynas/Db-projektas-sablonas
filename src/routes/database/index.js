@@ -1,11 +1,13 @@
-import client from "../../services/database";
+import Client from "../../services/database";
 
 
 export async function get({request}) {
-    const data = [];
+    let data = [];
+    const client = await Client;
     for await (const key of client.scanIterator({TYPE: 'hash', MATCH: 'products:*',})) {
-        data.push(await client.hGetAll(key));
-      }
+        let obj = await client.hGetAll(key);
+        data.push(obj);
+    }
     console.log(data);
     return {
         body: {
