@@ -29,7 +29,7 @@
 {:else if type == "select"} 
     <div class="form-group">
         <label for="{id}">{label}</label>
-        <select id="{id}" class="form-control">
+        <select name={name} id="{id}" class="form-control">
         {#each items as item }
             {#if item.value == defaultValue} 
             <option value="{item.value}" selected>{item.text}</option>

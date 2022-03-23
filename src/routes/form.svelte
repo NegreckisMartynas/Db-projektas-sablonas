@@ -6,6 +6,7 @@
     export let field1;
     export let field2;
     export let radio;
+    export let select;
 
     let anyResults = field1 || field2 || radio;
 
@@ -26,6 +27,7 @@
                     <TextInput type="text" name="field1" label="Pirmas laukas" placeholder="tekstas"/>
                     <TextInput type="text" name="field2" label="Antras laukas" placeholder="tekstas"/>
                     <ListInput type="radio" name="radio" label="Radio Input" items={[{text: 'Taip', value: true}, {text: 'Ne', value: false}]} defaultValue={true}/>
+                    <ListInput type="select" name="select" label="Radio Input" items={[{text: 'Taip', value: true}, {text: 'Ne', value: false}]} defaultValue={true}/>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
@@ -35,6 +37,7 @@
                 <span>Pirmas laukas: {field1} </span><br/>
                 <span>Antras laukas: {field2} </span><br/>
                 <span>Radio Input: {radio} </span><br/>
+                <span>Radio Input: {select} </span><br/>
             </div>
             {/if}
         </div>
